@@ -1,0 +1,137 @@
+.NavBar{
+    position: absolute;
+left: 0.35%;
+right: -0.35%;
+top: 0%;
+bottom: 99.26%;
+height: 70px;
+width: 100%;
+background: rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: row;
+
+align-items: center;
+}
+.rightNav{
+   flex: 1;
+
+}
+.leftNav{
+flex: 1;
+}
+.leftNav .navlinks{
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+cursor: pointer;
+line-height: 14px;
+text-decoration: none;
+padding: 3%;
+color: #FFFFFF;
+}
+
+.navLogo{
+    height: 40px;
+    margin-left: 78px;
+}
+
+.menu-icon {
+    display: none;
+    z-index : 10 !important;
+}
+@media screen and (max-width:980px) {
+    .leftNav .navlinks{
+        font-size: 10px;
+
+    }
+    .navLogo{
+        height: 30px;
+    }
+
+}
+.menu-item {
+    background-color: rgb(45, 45, 39);;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60vh;
+    width: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: open-menu 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white !important  ;
+}
+
+.leftNav a:hover , .menu-item a:hover {
+    color: teal;
+   
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 25px;
+
+}
+@media screen and (max-width:850px) {
+    .leftNav .navlinks{
+        font-size: 9px;
+
+    }
+  
+
+}
+@media screen and (max-width:750px) {
+    .leftNav .navlinks{
+       display: none;
+
+    }
+     .menu-icon {
+
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        z-index: 1;
+        cursor: pointer;
+        transition: all 9ms ease-in;
+    }
+
+    .navLogo{
+        height: 40px;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+       
+    }
+  
+
+}
+@keyframes open-menu {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        opacity: 0.97;
+
+        width: 50%;
+    }
+
+}

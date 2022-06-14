@@ -1,0 +1,19 @@
+.left-side{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 1.2em;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+.right-side{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 0.8em;
+line-height: 19px;
+
+color: #FFFFFF;
+margin-right: 29px;
+}

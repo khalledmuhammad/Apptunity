@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.leftSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.shape1 {
+    background: linear-gradient(145.09deg, rgba(100, 100, 100, 0.88) 30.16%, rgba(100, 100, 100, 0.88) 50.04%, #727272 91.29%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    height: 262px;
+    width: 261px;
+    border-radius: 400px 40px 20px;
+   
+    cursor: pointer;
+
+
+}
+
+.shape2 {
+    background: linear-gradient(137.58deg, #9B9999 11.38%, rgba(130, 130, 130, 0.79) 50.04%, rgba(146, 146, 146, 0.36) 91.54%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    height: 161px;
+    width: 144px;
+    border-radius: 400px 40px 20px;
+    transform: rotate(-90deg);
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+    
+}
+.shape2 p{
+    color: #FFFFFF;
+
+transform: rotate(-250.15deg);
+font-size: 0.5em;
+}
+
+.rightSide {
+
+    flex: 1;
+
+}
+@media (max-width: 1273px) {
+    .container {
+
+        flex-direction: column;
+    
+    }
+    .leftSide {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .rightSide {
+        display: flex;
+
+        flex-direction: row;
+    
+    }
+    .shape1 {
+      
+        height: 262px;
+        width: 261px;
+        border-radius: 400px 40px 20px;
+       
+       
+    
+    }
+    
+    .shape2 {
+       
+        height: 161px;
+        width: 144px;
+        border-radius: 400px 40px 20px;
+        transform: rotate(-90deg);
+        margin-left: 10px;
+      
+        
+    }
+
+}
+
+@media (max-width: 684px) {
+
+    .shape1 {
+      
+        height: 200px;
+        width: 200px;
+       
+       
+    
+    }
+    
+    .shape2 {
+       
+        height: 100px;
+        width: 80px;
+        border-radius: 400px 40px 20px;
+        transform: rotate(-90deg);
+        margin-left: 10;
+      
+        
+    }
+
+}

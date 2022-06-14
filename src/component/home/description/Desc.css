@@ -1,0 +1,87 @@
+.FullContainer{
+    background-image: linear-gradient(to bottom right, #262626, #1e1e1e, #171717, #0d0d0d, #000000);
+    height: 50vh;
+    box-shadow: 7px 6px 18px -1px rgba(0, 0, 0, 0.55);
+
+
+
+}
+.descContainer{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.left-side{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #989898;
+    flex: 1;
+
+}
+.right-side{
+    flex: 1;
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #989898;
+}
+.logo-bottom{
+    margin-top: 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bottomLogo{
+    height: 40px;
+    margin-right: 40px;
+    border: 1px solid blue;
+    cursor: pointer;
+  
+}
+
+@media (max-width: 741px) {
+
+    .left-side{
+        font-size: 1em
+
+    }
+    .right-side{
+        font-size: 1em;
+        flex-wrap: wrap;
+
+    }
+
+}
+@media (max-width: 587px) {
+
+    .left-side{
+        font-size: 1em
+
+    }
+    .right-side{
+        font-size: 1em;
+   
+
+    }
+    
+    .FullContainer{
+        height: 70vh;
+    
+    }
+
+}
