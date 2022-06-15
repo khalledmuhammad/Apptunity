@@ -86,7 +86,7 @@ font-size: 0.5em;
         height: 161px;
         width: 144px;
         border-radius: 400px 40px 20px;
-        transform: rotate(-90deg);
+        transform: rotate(-180deg);
         margin-left: 10px;
       
         
@@ -110,7 +110,7 @@ font-size: 0.5em;
         height: 100px;
         width: 80px;
         border-radius: 400px 40px 20px;
-        transform: rotate(-90deg);
+        transform: rotate(-180deg);
         margin-left: 10;
       
         

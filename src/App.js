@@ -5,21 +5,37 @@ import Home from './component/home/Home';
 import Desc from './component/home/description/Desc';
 import Services from './component/services/Services';
 import Sample from './component/sample/Sample';
+import Quality from './component/quality/Quality';
+import { Industry } from './component/industry/Industry';
+import Questions from './component/questions/Questions';
+import Hiring from './component/hiring/Hiring';
+import Tech from './component/tech/Tech';
+import Experience from './component/experience/Experience';
+import Story from './component/story/Story';
+import Footer from './component/footer/Footer';
 
 
 AOS.init({
-  duration : 1000
+  duration : 800
 });
 
 
 function App() {
   return (
-    <div>
+    <>
     <Home />
    <Desc />
    <Services />
    <Sample />
-    </div>
+   <Quality />
+   <Industry />
+   <Questions />
+   <Hiring />
+   <Tech />
+   <Experience />
+   <Story />
+   <Footer />
+    </>
   );
 }
 

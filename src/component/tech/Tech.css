@@ -1,0 +1,47 @@
+.techContainer{     
+    margin-top: 5%;
+    padding: 20px;
+
+}
+.techImage {
+
+    opacity: 0.2;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 6%;
+
+    margin-inline: 20px;
+    cursor: pointer;
+  }
+
+ .TechHeader{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+margin-bottom:5%;
+line-height: 28px;
+text-align: center;
+
+color: #989898;
+  }
+.TechText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5%;
+
+    
+    color: #848484;
+}
+.TechText b {
+    color: rgb(46, 42, 42);
+}
+.Developers{
+    
+    border-top: 1px solid #E6E6E6;
+    
+    
+}

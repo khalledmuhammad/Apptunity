@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;600;900&display=swap');*,
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Roboto:wght@300;500;900&family=Sacramento&display=swap');
+*,
 *::before,
 *::after {
   box-sizing: inherit;

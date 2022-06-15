@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import "./RightSide.css";
+
 const RightSideShape = styled.div`
   background: ${(props) => props.color};
   box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
@@ -12,18 +13,18 @@ const RightSideShape = styled.div`
   right: ${(props) => props.right};
   margin-left: auto;
   margin-right: auto;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
 
   text-align: center;
   border-radius: 10% 10% 40% 10%;
   position: absolute;
   &:hover {
-    z-index: 1;
-    cursor: pointer;
     transform: translatey(-2);
     transition: all 100ms ease-in;
-    h3::after {
-      content: border;
-    }
+    z-index: 1;
+    cursor: pointer;
+   
     span {
       visibility: visible;
       opacity: 1;
@@ -78,7 +79,6 @@ const RightSideShape = styled.div`
     flex-wrap: wrap;
     h3 {
       font-size: 0.8em;
-      word-break:break-all ;
     }
     span {
       font-size: 0.5em;
@@ -87,6 +87,7 @@ const RightSideShape = styled.div`
 
     }
   }
+ 
 `;
 
 const RightSide = () => {
@@ -95,11 +96,12 @@ const RightSide = () => {
       <div className="leftSide">
         <div data-aos="slide-right" className="shape1"></div>
         <div  className="shape2">
-          <p>CONTACT US</p>{" "}
+          <p>CONTACT US</p>
         </div>
       </div>
       <div className="rightSide">
         <RightSideShape
+
           data-aos="fade-in"
           top={"0.1%"}
           bottom={"93.7%"}

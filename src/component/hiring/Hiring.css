@@ -1,0 +1,42 @@
+.hiringContainer {
+    background: linear-gradient(149.47deg, rgba(39, 102, 223, 0.9) 5.08%, rgba(68, 66, 179, 0.9) 50.65%, rgba(95, 39, 179, 0.9) 75.66%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100vw;
+}
+
+.hiringText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 7%;
+
+    color: #FFFFFF;
+}
+
+.hiringCard {
+    width: 100vw;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.footerHiring {
+    margin-top: 5%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    text-align: center;
+    margin-inline: 40px;
+
+    mix-blend-mode: overlay;
+    margin-bottom: 30px;
+}

@@ -12,7 +12,7 @@ const Container = styled.div`
     rgba(95, 39, 179, 0.9) 75.66%
   );
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

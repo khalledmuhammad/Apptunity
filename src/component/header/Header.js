@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <nav className='NavBar ' >
        <div className="menu-icon">
-        <Hamburger toggled={isOpen} toggle={setOpen} color="#ffff" />
+        <Hamburger toggled={isOpen} toggle={setOpen} color="teal" />
       </div>
       <div className="rightNav text-white  " data-aos="slide-right" > 
       <img className="navLogo" alt="Nav logo"    src={NavLogo} />
