@@ -1,8 +1,56 @@
-.footer{
+.footer {
 
     background: #3E3E3E;
 
-    height: 100vh;
+
     width: 100vw;
     margin-top: 30px;
+    padding: 3%;
 }
+
+.rowContainer {
+    justify-content: space-evenly;
+}
+
+.rowContainerSec {
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.rowContainer h3,
+.rowContainerSec h3 ,
+.btm-footer h3
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #989898;
+    cursor: pointer;
+
+}
+
+.rowContainer span,
+.rowContainerSec span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+    cursor: pointer;
+
+
+    color: #989898;
+
+}
+.rowContainer hr,
+.rowContainerSec hr ,
+.btm-footer hr{ display: block; height: 1px;
+    border: 0; border-top: 1px solid #989898;
+    margin: 1em 0; padding: 0; }
