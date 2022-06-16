@@ -121,15 +121,15 @@ const RightSide = () => {
   return (
     <div className="container">
       <div className="leftSide">
-        <div data-aos="slide-right" className="shape1"></div>
-        <div className="shape2">
+        <motion.div data-aos="slide-right" className="shape1" whileTap={{ scale: 0.5 , rotate:90 }}   transition={{  ease: "easeOut" , duration: 0.1 }}  ></motion.div>
+        <motion.div className="shape2"   >
           <p>CONTACT US</p>
-        </div>
+        </motion.div>
       </div>
       <div className="rightSide">
         <RightSideShape
           as={motion.div}
-          whileHover={{ scale: 1.05, transition: { duration: 0.01 } }}
+          whileHover={{ scale: 1.05, transition: {  ease: "easeOut" , duration: 0.1 } }}
           whileTap={{ scale: 0.5 }}
           top={"0.1%"}
           bottom={"93.7%"}
