@@ -69,6 +69,7 @@ const Hiring = () => {
           data-aos="fade-in"
           as={motion.div}
           whileHover={{ y: -20, transition: { duration: 0.2 } }}
+          
         >
           <img src={Scalable} alt="Scalable" className="hiring" />
 

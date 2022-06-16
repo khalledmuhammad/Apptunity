@@ -16,7 +16,7 @@ import Footer from './component/footer/Footer';
 
 
 AOS.init({
-  duration : 800
+  duration : 500
 });
 
 
