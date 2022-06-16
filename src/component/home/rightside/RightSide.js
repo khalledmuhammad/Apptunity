@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import React from "react";
 import "./RightSide.css";
+import { motion } from "framer-motion";
 
 const RightSideShape = styled.div`
   background: ${(props) => props.color};
   box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
-  height: 428px;
+  height: 400px;
   width: 244px;
   top: ${(props) => props.top};
   bottom: ${(props) => props.bottom};
@@ -13,21 +14,26 @@ const RightSideShape = styled.div`
   right: ${(props) => props.right};
   margin-left: auto;
   margin-right: auto;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   text-align: center;
-  border-radius: 10% 10% 40% 10%;
+  border-radius: 35px 35px 200px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
   position: absolute;
+  transition: all 1s linear;
   &:hover {
-    transform: translatey(-2);
-    transition: all 100ms ease-in;
     z-index: 1;
     cursor: pointer;
-   
+
     span {
       visibility: visible;
       opacity: 1;
+      margin-top: 25%;
     }
   }
   h3 {
@@ -38,9 +44,6 @@ const RightSideShape = styled.div`
     line-height: 23px;
 
     color: #ffffff;
-    position: relative;
-    left: 10px;
-    top: 6px;
 
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
   }
@@ -54,25 +57,32 @@ const RightSideShape = styled.div`
     color: #ffffff;
 
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    left: 10px;
+
     top: 40px;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
   }
 
   @media screen and (max-width: 1273px) {
+    margin-top: 10px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
 
     text-align: center;
-    border-radius: 10% 10% 40% 10%;
     position: relative;
   }
+  @media (max-width: 990px) {
+    h3 {
+      font-size: 1em;
+    }
+    span {
+      font-size: 0.8em;
+      margin-top: 2%;
+    }
+  }
+
   @media (max-width: 684px) {
     height: 328px;
     width: 144px;
@@ -83,11 +93,28 @@ const RightSideShape = styled.div`
     span {
       font-size: 0.5em;
       left: 2px;
-    top: 10px;
-
+      top: 10px;
     }
   }
- 
+  @media (max-width: 464px) {
+    h3 {
+      font-size: 0.6em;
+    }
+    span {
+      font-size: 0.4em;
+      margin-top: 2%;
+    }
+  }
+  @media (max-width: 385px) {
+    h3 {
+      font-size: 0.6em;
+    }
+    span {
+      font-size: 0.3em;
+      margin-top: 2%;
+      align-self: center;
+    }
+  }
 `;
 
 const RightSide = () => {
@@ -95,14 +122,15 @@ const RightSide = () => {
     <div className="container">
       <div className="leftSide">
         <div data-aos="slide-right" className="shape1"></div>
-        <div  className="shape2">
+        <div className="shape2">
           <p>CONTACT US</p>
         </div>
       </div>
       <div className="rightSide">
         <RightSideShape
-
-          data-aos="fade-in"
+          as={motion.div}
+          whileHover={{ scale: 1.05, transition: { duration: 0.01 } }}
+          whileTap={{ scale: 0.5 }}
           top={"0.1%"}
           bottom={"93.7%"}
           left={"72.08%"}
@@ -124,8 +152,10 @@ const RightSide = () => {
           </span>
         </RightSideShape>
         <RightSideShape
-          data-aos="fade-in"
-          top={"6%"}
+            as={motion.div}
+            whileHover={{ scale: 1.05, transition: { duration: 0.01 } }}
+            whileTap={{ scale: 0.5 }}
+          top={"12%"}
           bottom={"92.84%"}
           left={"72.64%"}
           right={"10.42%"}
@@ -146,8 +176,10 @@ const RightSide = () => {
           </span>
         </RightSideShape>
         <RightSideShape
-          data-aos="fade-in"
-          top={"13%"}
+            as={motion.div}
+            whileHover={{ scale: 1.05, transition: { duration: 0.01 } }}
+            whileTap={{ scale: 0.5 }}
+          top={"24%"}
           bottom={"92%"}
           left={"73.19%"}
           right={"9.86%"}
@@ -168,8 +200,10 @@ const RightSide = () => {
           </span>
         </RightSideShape>
         <RightSideShape
-          data-aos="fade-in"
-          top={"20%"}
+            as={motion.div}
+            whileHover={{ scale: 1.05, transition: { duration: 0.01 } }}
+            whileTap={{ scale: 0.5 }}
+          top={"36%"}
           bottom={"91.1%"}
           left={"73.89%"}
           right={"9.17%"}

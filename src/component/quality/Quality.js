@@ -14,9 +14,8 @@ cursor: pointer;
   width: 300px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  	text-overflow: ellipsis;
 
+  
   text-align: center;
   .cardHeader {
     width: 100%;
@@ -37,7 +36,7 @@ cursor: pointer;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: calc(0.2rem + 1vw);
+    font-size: 1em;
     line-height: 19px;
 
     color: #000000;
@@ -47,25 +46,53 @@ cursor: pointer;
     font-family: "Italiana";
     font-style: normal;
     font-weight: 400;
-    font-size: calc(0.4rem + 1vw);
+    font-size: 0.9em;
     line-height: 28px;
     margin: 0 40px 0 40px;
 
     color: #000000;
   }
-  @media screen and (max-width:603px){
+  @media screen and (max-width:505px){
+   
     .desc {
-      margin:0;
+    margin: 10px 40px 0 40px;
+    text-align:center ;
+ 
+    font-size: 1em;
+   
+  }
 
-    }
+  .btm-text {
+ 
+    font-size: 0.7em;
+    margin: 0 40px 0 40px;
+    text-align:center ;
 
+
+    color: #000000;
+  }
 
     
   }
-  @media screen and (max-width:400px){
+  @media screen and (max-width:473px){
     
 
-    
+    .desc {
+   
+ 
+    font-size: 0.7em;
+    margin:  0;
+
+  }
+
+  .btm-text {
+ 
+    font-size: 0.5em;
+    margin: 0 ;
+   
+
+
+  }
   }
 `;
 const Quality = () => {

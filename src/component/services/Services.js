@@ -16,12 +16,13 @@ const ServiceShape = styled.div`
   box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
   height: 428px;
   width: 244px;
-  border-radius: 10% 10% 40% 10%;
-  display: flex;
+  border-radius: 35px 35px 200px 35px;
+    display: flex;
   flex-direction: column;
+  padding : 2%;
   cursor: pointer;
   transition: 0.5s all ease-out;
-  overflow: hidden;
+
   text-overflow: ellipsis;
   transform: scale(0.9);
   &:hover {
@@ -35,10 +36,7 @@ const ServiceShape = styled.div`
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 23px;
-    position: relative;
-    top: 5%;
-    position: relative;
-    left: 10%;
+ 
     color: #ffffff;
 
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
@@ -55,9 +53,7 @@ const ServiceShape = styled.div`
     font-weight: 300;
     font-size: 1rem;
     line-height: 19px;
-    align-self: flex-start;
-    position: relative;
-    left: 2%;
+
 
     color: #ffffff;
 
@@ -67,33 +63,36 @@ const ServiceShape = styled.div`
   img {
     height: 40px;
     width: 40px;
-    position: relative;
-    top: 10%;
-    left: 6%;
+    margin-top:5% ;
     cursor: pointer;
   }
   @media (max-width: 684px) {
     height: 328px;
     width: 144px;
-    flex-wrap: wrap;
+    
     h3 {
       font-size: 0.8em;
+      text-align:center ;
+
     }
+
     span {
       font-size: 0.5em;
     }
     img {
       height: 20px;
       width: 20px;
-      margin-bottom: 4%;
+
     }
   }
-  @media (max-width: 366px) {
+  
+  @media (max-width: 470px) {
     h3 {
       font-size: 0.6em;
+      text-align:center ;
     }
     span {
-      font-size: 0.3em;
+      font-size: 0.4em;
     }
   }
 `;
@@ -111,7 +110,8 @@ const Services = () => {
       <div className=" services-top d-flex  flex-row justify-content-around mt-5 ">
         <ServiceShape
           as={motion.div}
-          whileHover={{ scale: 1.1  , transition: { duration: 0.1 } }} 
+          whileHover={{ scale: 1.1  , transition: { duration: 0.1 } }}           whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(39, 102, 223, 0.8) 5.08%, rgba(68, 66, 179, 0.8) 50.65%, rgba(95, 39, 179, 0.8) 75.66%)"
         >
@@ -132,7 +132,8 @@ const Services = () => {
           />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(20, 170, 105, 0.8) 5.08%, rgba(25, 145, 128, 0.8) 50.65%, rgba(33, 127, 149, 0.8) 75.66%)"
         >
@@ -153,7 +154,8 @@ const Services = () => {
           />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(184, 67, 118, 0.8) 5.08%, rgba(162, 51, 125, 0.8) 50.65%, rgba(137, 31, 127, 0.8) 75.66%)"
         >
@@ -175,7 +177,8 @@ const Services = () => {
           />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color="linear-gradient(166.2deg, rgba(51, 145, 255, 0.8) 5.77%, rgba(62, 151, 255, 0.8) 44.34%, rgba(32, 159, 231, 0.8) 86.27%)"
         >
@@ -195,7 +198,8 @@ const Services = () => {
       </div>
       <div className=" services-bottom  d-flex  flex-row justify-content-around mt-5 ">
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(39, 102, 223, 0.8) 5.08%, rgba(68, 66, 179, 0.8) 50.65%, rgba(95, 39, 179, 0.8) 75.66%)"
         >
@@ -213,7 +217,8 @@ const Services = () => {
           />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(20, 170, 105, 0.8) 5.08%, rgba(25, 145, 128, 0.8) 50.65%, rgba(33, 127, 149, 0.8) 75.66%)"
         >
@@ -232,7 +237,8 @@ const Services = () => {
           />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color=" linear-gradient(149.47deg, rgba(184, 67, 118, 0.8) 5.08%, rgba(162, 51, 125, 0.8) 50.65%, rgba(137, 31, 127, 0.8) 75.66%)"
         >
@@ -247,7 +253,8 @@ const Services = () => {
           <img className="ServiceLogo" alt="service logo" src={Testing_QA} />
         </ServiceShape>
         <ServiceShape
-        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}  
+        as={motion.div}  whileHover={{ scale: 1.1 , transition: { duration: 0.1 }  }}            whileTap={{ scale: 0.5 }}
+
           data-aos="fade-in"
           color="linear-gradient(166.2deg, rgba(51, 145, 255, 0.8) 5.77%, rgba(62, 151, 255, 0.8) 44.34%, rgba(32, 159, 231, 0.8) 86.27%)"
         >

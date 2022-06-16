@@ -19,6 +19,7 @@ const StoryCard = styled.div`
 
   border-radius: 40px;
   cursor: pointer;
+  padding: 10px ;
 
   height: 370px;
   width: 250px;
